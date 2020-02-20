@@ -25,7 +25,7 @@ SECRET_KEY = 'q_4nwq)q)as+1=+&dwv_5^nzft406+q6p4=)wt9)a^u!3f!!mj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','.godadaddy.com']
+# ALLOWED_HOSTS = ['127.0.0.1','.godadaddy.com']
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blogApp'
+    'blogApp',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'demo_blog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['demo_blog/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
